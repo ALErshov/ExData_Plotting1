@@ -19,12 +19,12 @@ plot4<-function (){
   par(mfrow=c(2,2))
   
   #plot1
-  with(data, plot(Global_active_power,type="l",xaxt="n", xlab="",ylab="Global Active Power (kilowatts)"))
+  with(data, plot(Global_active_power,type="l",xaxt="n", xlab="",ylab="Global Active Power"))
   xlbl<-c(1, length(data$Date)/2+1,length(data$Date)+1)
   axis(1, at=xlbl,labels=c("Thu", "Fri", "Sat"))
   
   #plot2
-  with(data, plot(Voltage,type="l",xaxt="n", xlab="datetime",ylab="Global Active Power"))
+  with(data, plot(Voltage,type="l",xaxt="n", xlab="datetime",ylab="Voltage"))
   axis(1, at=xlbl,labels=c("Thu", "Fri", "Sat"))
   
   #plot3
